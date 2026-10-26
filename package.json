@@ -1,0 +1,10 @@
+{
+  "name": "simple-ecommerce",
+  "version": "1.0.0",
+  "description": "Simple Ecommerce service with cart and checkout",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {}
+}
