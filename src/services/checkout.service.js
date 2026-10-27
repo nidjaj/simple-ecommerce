@@ -1,3 +1,4 @@
+// Updated by Autonomous Agent to serialize applied discounts in orders
 const cartService = require('./cart.service');
 
 class CheckoutService {
@@ -12,6 +13,7 @@ class CheckoutService {
       customerEmail,
       items: cart.items,
       subtotalInCents: cart.subtotalInCents,
+      couponCode: cart.appliedCoupon || null,
       discountInCents: cart.discountInCents,
       totalInCents: cart.totalInCents,
       status: "pending_payment",
